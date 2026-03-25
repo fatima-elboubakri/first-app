@@ -1,6 +1,6 @@
 'use client'
 
-import logo from "@/assets/logo.png";
+import logo from "../../assets/logo.png";
 import Link from "next/link";
 import classes from "./main-header.module.css";
 import Image from "next/image";
