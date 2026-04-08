@@ -24,7 +24,7 @@ export class TasksService {
     }
     if (search) {
       query.andWhere(
-        'LOWER(task.name) like :search OR LOWER(task.description) like :search',
+        '(LOWER(task.name) like :search OR LOWER(task.description) like :search)',
         { search: '%' + search + '%' },
       );
     }
